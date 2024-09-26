@@ -172,7 +172,7 @@ class bxConan(ConanFile):
         elif self.settings.os in ["Linux", "FreeBSD"]:
             lib_ext = "*.a"
             package_lib_prefix = "lib"
-        elif self.settings.os == "Macos":
+        elif self.settings.os  [ "Macos", "iOS"]:
             lib_ext = "*.a"
             package_lib_prefix = "lib"
 
