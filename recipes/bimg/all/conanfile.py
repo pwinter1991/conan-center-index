@@ -197,7 +197,7 @@ class bimgConan(ConanFile):
         elif self.settings.os in ["Linux", "FreeBSD"]:
             lib_pat = "*bimg*.a"
             package_lib_prefix = "lib"
-        elif self.settings.os == "Macos":
+        elif self.settings.os in ["Macos", "iOS"]:
             lib_pat = "*bimg*.a"
             package_lib_prefix = "lib"
 
